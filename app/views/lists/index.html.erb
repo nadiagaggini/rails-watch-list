@@ -1,0 +1,8 @@
+<h1>Lists</h1>
+<%# IL FAUT montrer toutes les listes, donc itérer sur les listes %>
+<ul>
+<% @lists.each do |list| %>
+<li><%=  list.name %></li>
+<% end %>
+</ul>
+<%= link_to "Create a new list", new_list_path %>
